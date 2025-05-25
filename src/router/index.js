@@ -38,4 +38,15 @@ const router = createRouter({
   routes
 })
 
+router.beforeEach((to, from, next) => {
+  const isLoggedIn = localStorage.getItem('loggedIn') === 'true'
+
+  if (to.path !== '/login' && !isLoggedIn) {
+    next('/login')
+  } else {
+    next()
+  }
+})
+
+
 export default router
