@@ -1,0 +1,40 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Background hijau gradien untuk seluruh body */
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  min-height: 100vh;
+  color: #333;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+nav {
+  background: #2c3e50;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #2196f3, #64b5f6); /* biru gradien */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: white; /* teks putih supaya kontras */
+}
